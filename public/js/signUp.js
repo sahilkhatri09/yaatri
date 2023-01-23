@@ -24,7 +24,7 @@ const signup = async (name, email, password, passwordConfirm) => {
   }
 };
 
-const signupForm = document.querySelector('.form--signup');
+const signupForm = document.querySelector('.singup-form');
 
 if (signupForm) {
   signupForm.addEventListener('submit', e => {

@@ -8,7 +8,12 @@ const logout = async () =>{
                 data : null
             }
         });
-        if ((res.data.status) === 'success') { location.assign('/'); }
+        if (res.data.status === 'success') {
+            showAlert('success', 'Log Out successfully!');
+            window.setTimeout(() => {
+                location.assign('/');
+            }, 1000);
+        }
     }catch (err){
         console.log(err.response);
         showAlert('error','Error logging out Try again')

@@ -1,3 +1,3 @@
 # Yaatri Application
 
-Built using modern technologies : node.js , express, mongoDB, mongoose and friend
+Built using modern technologies : node.js , express, mongoDB, mongoose and friends

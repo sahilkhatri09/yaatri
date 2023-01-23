@@ -10,6 +10,7 @@ const logout = async () =>{
         });
         if ((res.data.status) === 'success') { location.assign('/'); }
     }catch (err){
+        console.log(err.response);
         showAlert('error','Error logging out Try again')
     }
 }

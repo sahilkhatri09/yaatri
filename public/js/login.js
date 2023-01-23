@@ -2,7 +2,7 @@
 const loginForm = document.querySelector('.form--login');
 
 const login =async (email,password) =>{
-    // console.log(email,password);
+    
     try{
         const res = await axios({
             method : 'POST',

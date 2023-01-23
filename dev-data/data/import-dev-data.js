@@ -7,7 +7,10 @@ const User = require('./../../models/userModel')
 
 dotenv.config({ path: './config.env' });
 
-const DB = process.env.DATABASE_LOCAL;
+const DB = process.env.DATABASE.replace(
+  '<password>',
+  process.env.DATABASE_PASSWORD
+);
 
 mongoose
   .connect(DB, {
